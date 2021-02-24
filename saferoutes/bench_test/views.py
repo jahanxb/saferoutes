@@ -12,8 +12,8 @@ import os
 class SafeResponse(APIView):
 
     def get(self,request,format=None):
-        f = open(os.path('/home/jahan/saferoutes/data.json'))
-        #f = open('D://PycharmProjects/saferoutes/data.json',encoding='UTF-8')
+
+        f = os.open('../../data.json')
 
         # returns JSON object as
         # a dictionary
