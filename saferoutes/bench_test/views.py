@@ -7,12 +7,13 @@ import json
 from rest_framework import generics
 # Create your views here.
 from .serializer import SafeRoutesSerializer
-
+import os
 
 class SafeResponse(APIView):
 
     def get(self,request,format=None):
-        f = open('D://PycharmProjects/saferoutes/data.json',encoding='UTF-8')
+        f = open(os.path('/home/jahan/saferoutes/data.json'))
+        #f = open('D://PycharmProjects/saferoutes/data.json',encoding='UTF-8')
 
         # returns JSON object as
         # a dictionary
