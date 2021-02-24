@@ -13,7 +13,8 @@ class SafeResponse(APIView):
 
     def get(self,request,format=None):
 
-        f = os.open('../../data.json')
+        f = open('/home/jahan/saferoutes/data.json',encoding='UTF-8')
+
 
         # returns JSON object as
         # a dictionary
